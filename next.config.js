@@ -1,6 +1,8 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
-  reactStrictMode: true,
-}
+  env: {
+    MONGODB_URI: 'mongodb://localhost/userCrudApp',
+  },
+};
 
-module.exports = nextConfig
+module.exports = nextConfig;
